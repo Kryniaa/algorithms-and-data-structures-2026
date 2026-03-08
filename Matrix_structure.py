@@ -74,24 +74,28 @@ def transpose(matrix):
     
     return result
 
-m1 = Matrix(
-[ [1, 0, 2],
-  [-1, 3, 1] ]
-)
+def main():
+    m1 = Matrix(
+    [ [1, 0, 2],
+     [-1, 3, 1] ]
+    )
 
-print("m1:")
-print(m1)
-print("\n")
+    print(transpose(m1))
+    print("\n")
 
-m2 = Matrix(
-[ [3, 1],
-  [2, 1],
-  [1, 0]]
-)
+    m2 = Matrix((2,3), 1)
 
-print("m2:")
-print(m2)
-print("\n")
+    print(m1+m2)
+    print("\n")
 
-print("m1*m2:")
-print(m1*m2)
+    m3 = Matrix(
+    [ [3, 1],
+     [2, 1],
+       [1, 0] ]
+    )
+
+    print(m1*m3)
+    print("\n")
+
+if __name__ == "__main__":
+    main()
